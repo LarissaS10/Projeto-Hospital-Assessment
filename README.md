@@ -43,7 +43,7 @@ Essa é a forma mais simples de rodar o projeto — não precisa ter Java, Maven
 **1. Clone o repositório:**
 
 ```bash
-git clone <URL_DO_REPOSITORIO>
+git clone [<URL_DO_REPOSITORIO>](https://github.com/LarissaS10/Projeto-Hospital-Assessment)
 ```
 
 **2. Acesse a pasta do projeto:**
