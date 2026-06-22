@@ -1,0 +1,239 @@
+{
+  "info": {
+    "_postman_id": "623633fe-d34a-4f58-b36f-79449f1480a5",
+    "name": "Hospital API - AT",
+    "description": "Collection de testes para a API REST de gerenciamento hospitalar (Pacientes, Médicos, Consultas e Internações)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "13280785"
+  },
+  "item": [
+    {
+      "name": "Pacientes",
+      "item": [
+        {
+          "name": "Cadastrar Paciente",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"nome\": \"Carlos Souza\",\n    \"cpf\": \"111.222.333-44\",\n    \"dataNascimento\": \"1995-01-10\",\n    \"telefone\": \"(51) 98888-3333\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/pacientes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "pacientes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar Paciente por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/pacientes/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "pacientes",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Listar Pacientes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/pacientes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "pacientes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Remover Paciente",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/pacientes/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "pacientes",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Médicos",
+      "item": [
+        {
+          "name": "Cadastrar Médico",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"nome\": \"Dr. Paulo Mendes\",\n    \"crm\": \"111222-RS\",\n    \"especialidade\": \"Dermatologista\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/medicos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "medicos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Listar Médicos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/medicos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "medicos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Ranking Medicos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/consultas/ranking-medicos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "consultas",
+                "ranking-medicos"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Consultas",
+      "item": [
+        {
+          "name": "Cadastrar Consulta",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"dataConsulta\": \"2026-07-01\",\n    \"observacoes\": \"Consulta de rotina\",\n    \"pacienteId\": 1,\n    \"medicoId\": 2\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/consultas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "consultas"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Actuator",
+      "item": [
+        {
+          "name": "Health Check",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/actuator/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "actuator",
+                "health"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080"
+    }
+  ]
+}

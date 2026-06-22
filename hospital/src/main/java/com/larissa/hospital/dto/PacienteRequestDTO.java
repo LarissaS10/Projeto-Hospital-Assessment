@@ -1,0 +1,14 @@
+package com.larissa.hospital.dto;
+
+import lombok.Getter;
+import lombok.Setter;
+import java.time.LocalDate;
+
+@Getter
+@Setter
+public class PacienteRequestDTO {
+    private String nome;
+    private String cpf;
+    private LocalDate dataNascimento;
+    private String telefone;
+}
