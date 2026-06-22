@@ -42,15 +42,15 @@ Essa é a forma mais simples de rodar o projeto — não precisa ter Java, Maven
 
 **1. Clone o repositório:**
 
-\`\`\`bash
+```bash
 git clone <URL_DO_REPOSITORIO>
-\`\`\`
+```
 
 **2. Acesse a pasta do projeto:**
 
-\`\`\`bash
+```bash
 cd hospital
-\`\`\`
+```
 
 **3. Suba os containers:**
 
@@ -66,28 +66,28 @@ Isso vai automaticamente:
 
 **4. Aguarde a mensagem no terminal:**
 
-\`\`\`
+```
 Dados iniciais carregados com sucesso!
-\`\`\`
+```
 
 A aplicação estará disponível em:
 
-\`\`\`
+```
 http://localhost:8080
-\`\`\`
+```
 
 ---
 
 ### Parando os containers
 
-\`\`\`bash
+```bash
 docker-compose down
-\`\`\`
+```
 
 ### Parando e resetando o banco (apaga todos os dados)
 
-\`\`\`bash
+```bash
 docker-compose down -v
-\`\`\`
+```
 
 ---
