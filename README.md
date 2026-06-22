@@ -54,9 +54,9 @@ cd hospital
 
 **3. Suba os containers:**
 
-\`\`\`bash
+```bash
 docker-compose up --build
-\`\`\`
+```
 
 Isso vai automaticamente:
 - Criar um container com o PostgreSQL (porta `5432`)
