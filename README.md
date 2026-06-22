@@ -18,6 +18,7 @@ O sistema permite cadastrar e gerenciar:
 ## 🛠️ Tecnologias Utilizadas
 
 - Java 17
+- Spring Web
 - Spring Boot 3.5.x
 - Maven
 - Spring Data JPA + PostgreSQL Driver
