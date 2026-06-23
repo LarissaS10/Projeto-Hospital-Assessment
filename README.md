@@ -1,10 +1,10 @@
-# 🏥 Hospital - Sistema de Gerenciamento
+# Hospital - Sistema de Gerenciamento
 
 API RESTful desenvolvida com **Spring Boot** para gerenciar pacientes, médicos, consultas e internações de um hospital. O sistema utiliza **PostgreSQL** como banco de dados relacional.
 
 ---
 
-## 📋 Sobre o Projeto
+## Sobre o Projeto
 
 O sistema permite cadastrar e gerenciar:
 - **Pacientes** (cadastro, busca, listagem e remoção)
@@ -15,7 +15,7 @@ O sistema permite cadastrar e gerenciar:
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - Java 17
 - Spring Web
@@ -31,7 +31,7 @@ O sistema permite cadastrar e gerenciar:
 
 ---
 
-## 🐳 Rodando com Docker (recomendado)
+## Rodando com Docker (recomendado)
 
 Essa é a forma mais simples de rodar o projeto — não precisa ter Java, Maven nem PostgreSQL instalados na máquina, só o Docker.
 
